@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  overflow-x: hidden;
+  font-size: 62.5%; //1rem= 10px;  10px/16px = 62.5%
+}
+
+body {
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: 'Noto Sans JP', sans-serif;
+
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+//--------------------HIDDEN--------------------//
+
+.hidden {
+  display: none;
+}
+
+// TEXT-CENTER
+.center-text {
+  text-align: center;
+}

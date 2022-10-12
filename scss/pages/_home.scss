@@ -1,0 +1,567 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.logo {
+  margin-left: 2rem;
+}
+
+.section-banner {
+  background-color: $color-secondary;
+  height: 80rem;
+  position: relative;
+
+}
+
+.banner {
+  &__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    z-index: 10;
+    position: relative;
+
+  }
+}
+
+.cicle {
+  position: absolute;
+  bottom: -18rem;
+  left: -8rem;
+  overflow: hidden;
+
+  &__img {
+    width: 110%;
+    z-index: 1;
+  }
+}
+
+.section-content {
+  height: 350rem;
+  width: 100%;
+  background: url(../img/bg-main.png) no-repeat;
+  background-size: cover;
+
+
+}
+
+.content {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding-top: 5rem;
+  z-index: 10;
+  position: relative;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__p {
+    padding: 2rem;
+    background: #547025;
+    color: $color-white;
+    border-radius: 50%;
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: 10px;
+    margin-right: 2rem;
+  }
+
+  &__h3 {
+    color: $color-secondary;
+    font-size: 13rem;
+    letter-spacing: 10px;
+  }
+}
+
+.product {
+  width: 100%;
+  background-color: $color-white;
+  border-radius: 10px;
+  border: 5px solid $color-black;
+  margin-bottom: 10rem;
+}
+
+.product-box {
+  padding: 2rem;
+
+  &__title {
+    padding: 0 6rem;
+    background-color: $color-secondary;
+    display: inline-block;
+    color: $color-white;
+    font-size: 2rem;
+    border-radius: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  span {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+}
+
+.product-app {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+//////////PRIZE
+/// 
+/// 
+.product-prize {
+  width: 100%;
+  height: 98rem;
+  background-color: $color-white;
+  border-radius: 10px;
+  border: 5px solid $color-black;
+  margin-bottom: 10rem;
+  position: relative;
+}
+
+.prize {
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 10rem;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: -8rem;
+
+
+  }
+
+  &__middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    img {
+      width: 40%;
+    }
+  }
+
+  .beef_imgs {
+    animation: scaleBig 0.5s infinite alternate;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 45rem;
+    left: 20rem;
+
+    img {
+      display: block;
+      width: 70%;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 6rem;
+
+    &--beef {
+      width: 60%;
+      animation: scaleBig 0.5s infinite alternate;
+    }
+
+    &--right {
+      img {
+        width: 100%;
+      }
+
+      .beef_col {
+        padding-right: 10rem;
+        width: 120%;
+      }
+
+    }
+  }
+
+}
+
+.product-pay {
+  width: 100%;
+  height: 72rem;
+  background-color: $color-white;
+  border-radius: 10px;
+  border: 5px solid $color-black;
+  margin-bottom: 10rem;
+  position: relative;
+}
+
+.pay-method {
+  text-align: center;
+  padding-top: 23rem;
+}
+
+.pay-img {
+  align-self: flex-end;
+}
+
+.product-orther {
+  display: flex;
+  gap: 3rem;
+}
+
+.product-left {
+  width: 100%;
+  height: 65rem;
+  background-color: $color-white;
+  border-radius: 10px;
+  border: 5px solid $color-black;
+
+  position: relative;
+  flex: 0 0 60%;
+
+}
+
+.product-right {
+  width: 100%;
+  height: 65rem;
+  background-color: $color-white;
+  border-radius: 10px;
+  border: 5px solid $color-black;
+
+  position: relative;
+  flex: 0 0 40%;
+}
+
+.eko__prize {
+  position: absolute;
+  top: -6rem;
+  left: -2rem;
+}
+
+.eko__50 {
+  position: absolute;
+  right: 0;
+  top: -8rem;
+}
+
+.lunch-set {
+  padding-top: 10rem;
+  padding-left: 3rem;
+}
+
+.productLunch {
+  width: 100%;
+
+
+  img {
+    width: 100%;
+  }
+}
+
+.productText {
+  padding: 2rem;
+}
+
+.prizeC {
+  position: absolute;
+  top: -6rem;
+  left: -2rem;
+}
+
+.ortherC {
+  position: relative;
+  top: -6rem;
+  right: -2rem;
+
+  img {
+    width: 100%;
+  }
+
+}
+
+.quo-pay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-icon {
+    padding-left: 2rem;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .quo-icon {
+    position: relative;
+    top: 0;
+    right: -3.2rem
+  }
+}
+
+
+.ticket {
+  background-color: #4B1226;
+  padding-bottom: 5rem;
+  padding-top: 10rem;
+  position: relative;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    border: solid;
+    border-width: 10rem 10rem 10rem 10rem;
+    bottom: -16rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-color: #4B1226 transparent transparent transparent;
+
+  }
+
+  .circle2 {
+    position: absolute;
+    top: -18rem;
+    z-index: 1;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-content {
+    position: relative;
+    max-width: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+
+    h3 {
+      color: white;
+      font-weight: 400;
+      font-size: 5.5rem;
+      text-align: center;
+    }
+  }
+
+  &-box {
+    width: 100%;
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+
+
+
+  &-top {
+    display: flex;
+    justify-content: center;
+    background-color: #FFEE00;
+    padding: 3rem;
+    position: relative;
+    font-size: 2rem;
+    padding-bottom: 4rem;
+
+
+    &__shortly {
+      position: absolute;
+      top: 12rem;
+      left: 4rem;
+      z-index: 100;
+    }
+
+    &__left {
+      flex: 0 0 50%;
+
+      &--txt {
+        font-size: 2.6rem;
+      }
+    }
+
+    &__right {
+      flex: 0 0 50%;
+
+      &--txt {
+        font-size: 2.2rem;
+      }
+    }
+  }
+
+  &-bottom {
+    background-color: white;
+    position: relative;
+
+
+    &__title {
+      font-size: 7rem;
+      font-weight: 400;
+      color: #E02006;
+      line-height: 1.2;
+      padding-left: 3rem;
+
+      span {
+        display: block;
+      }
+    }
+
+    &__content {
+      position: relative;
+      font-size: 2.5rem;
+      padding-left: 5rem;
+
+      &::before {
+        content: "*";
+        position: absolute;
+        top: -7px;
+        left: 3rem;
+        font-size: 5rem;
+      }
+
+      span {
+        display: block;
+      }
+    }
+
+    .conditions {
+      padding: 3rem;
+
+      p {
+        display: inline;
+        font-size: 1.8rem;
+
+
+        &::before {
+          content: "●";
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .ticket-hagen {
+      position: absolute;
+      top: 10rem;
+      right: 3rem;
+    }
+  }
+
+}
+
+
+.consultation {
+
+  background-color: #FFEE00;
+  background: url(../img/consultation.png) no-repeat center;
+  background-size: cover;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+  &-content {
+    max-width: 100rem;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5rem 3rem;
+  }
+
+  &-title {
+    text-align: center;
+    padding-top: 3rem;
+
+    p {
+      color: #E02006;
+      font-size: 1.8rem;
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  &-method {
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  &-contition {
+    padding: 3rem;
+  }
+}
+
+
+.contition {
+  font-size: 2.5rem;
+  padding-left: 3rem;
+  width: 100%;
+}
+
+.line-1 {
+  background: linear-gradient(transparent 55%, #FEA838 45%);
+  display: inline-block;
+}
+
+.line-2 {
+  background: linear-gradient(transparent 55%, #6AD3F8 45%);
+  display: inline-block;
+}
+
+.line-3 {
+  background: linear-gradient(transparent 55%, #FF8FE1 45%);
+  display: inline-block;
+}
+
+.contititonBottom {
+  max-width: 100rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+
+  span {
+    font-size: 10px;
+  }
+}
+
+.campaign {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 10rem 0 5rem 0;
+
+  &-title {
+    font-size: 3rem;
+    background-color: #DFDFDF;
+    padding: 1.5rem 2rem;
+    letter-spacing: 4px;
+    font-weight: 400;
+  }
+
+  &-scroll {
+    padding: 2rem;
+    height: 450px;
+    overflow-y: scroll;
+    border: 2px solid #DFDFDF;
+
+    h5 {
+      font-size: 1.8rem;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 1px solid #000;
+}
